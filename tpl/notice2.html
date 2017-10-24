@@ -1,0 +1,18 @@
+<ion-content class="notice2_content">
+    <div class="notice2_header">领票</div>
+    <hr>
+    <div style="margin-top: 10px">
+        <h3 style="font-size: 2rem;margin-left: 5%">姓名:</h3>
+    <input ng-model="$parent.username" type="text" placeholder="必须填写姓名" style="border: 2px solid gainsboro;width: 90%;height:48px ;margin: 0 auto;font-size: 20px">
+    </div>
+
+    <div style="margin-top: 5%">
+        <h2 style="text-align: center">座位：{{row}}排{{cell}}座</h2>
+    </div>
+    <!--<div class="button" ng-click="check()" style="width: 90%;height: 50px;margin: 4% 5%;line-height: 50px;background-color: rgba(165, 2, 2, 0.86);font-size: 30px;color: white;margin-top: 10%">查询</div>-->
+    <!--<div style="border-radius: 5px;width: 80%;height: 100px;border: 2px solid rgba(165, 2, 2, 0.86) ;margin: 0 auto">-->
+        <img ng-src="data:image/png;base64,{{data.result.image}}" style="display: block;margin: 0 auto">
+    <!--</div>-->
+    <button ng-click="submit()" style=" width:90%;margin:6% auto;font-size: 2rem;background: #a40000;border-radius: 30px;height: 48px;" class="checkout-button button button-block button-calm"  >确认领票</button>
+    <button ui-sref="home" style=" width:90%;margin:6% auto;font-size: 2rem;background: #a40000;border-radius: 30px;height: 48px;" class="checkout-button button button-block button-calm"  >返回首页</button>
+</ion-content>

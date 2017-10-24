@@ -1,0 +1,74 @@
+<ion-content  style="background: url('img/use_bg.png')">
+
+        <!--<img src="img/home_1.jpg" alt="">-->
+        <ion-slide-box class="slide_self1 slide" auto-play="true"  does-continue="true" show-pager="no" slide-interval='2000' >
+                <ion-slide ng-click="scene1()">
+                    <a  class="slide_a" ><img src="img/home_1.jpg" alt="" class="slide_img" ></a>
+            </ion-slide>
+            <ion-slide ng-click="scene2()" >
+                <a class="slide_a"><img src="img/14.png" alt="" class="slide_img" ></a>
+            </ion-slide>
+            <ion-slide ng-click="scene3()">
+                <a class="slide_a"><img src="img/home_3.png" alt="" class="slide_img" ></a>
+            </ion-slide>
+            <ion-slide ng-click="scene4()">
+                <a class="slide_a"><img src="img/12.png" alt="" class="slide_img" ></a>
+            </ion-slide>
+        </ion-slide-box>
+
+    <div class="home_content">
+        <!--免费领领票-->
+        <div style="width: 50%;margin: 0;float: left;" >
+            <div ng-click="notice()" class="home_img2">
+                <img src="img/home_list1.png"  class="img_responsive" alt="">
+            </div>
+        </div>
+
+        <!--我爱爱来-->
+        <div style="width: 50%;margin: 0;float: left;">
+            <div ng-click="love()" class="home_img2">
+                <a  id="love" >
+                    <img src="img/home_list2.png" class="img_responsive" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!--现场直播-->
+        <div style="width: 50%;margin: 0;margin-top:2px;float: left;clear: both">
+            <div ng-click="scene3()" class="home_img2">
+                <a  id="scene" >
+                    <img src="img/home_list3.png" class="img_responsive" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!--个人中心-->
+        <div style="width: 50%;margin: 0;margin-top:2px;float: left;" >
+            <div ng-click="book()" class="home_img2">
+                <img src="img/home_list4.png" class="img_responsive" alt="">
+            </div>
+        </div>
+
+        <!--登录 -->
+        <div style="width: 50%;margin: 0;margin-top: 2px;float: left;">
+            <div ui-sref="user1" class="home_img2">
+                <img src="img/home_list5.png" class="img_responsive" alt="">
+            </div>
+        </div>
+
+        <!-- 注册-->
+        <div style="width: 50%;margin: 0;margin-top: 2px;float: left;">
+            <div ui-sref="register" class="home_img2">
+                <img src="img/home_list6.png" class="img_responsive" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+</ion-content>
+<div class="home_footer">
+    <div>
+        <img src="img/home_footer.png" alt="">
+    </div>
+</div>

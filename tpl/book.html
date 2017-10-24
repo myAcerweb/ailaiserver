@@ -1,0 +1,38 @@
+<ion-content style="background: url('img/notice_bg.png')">
+<div style="width: 100%;height: 45px">
+    <!--<div class="button" style="float: left;background-color: rgba(2, 123, 255, 0.86);color: white">-->
+        <!--返回-->
+    <!--</div>-->
+    <div style="float: left;line-height: 45px;font-size: 30px;color: rgba(165, 2, 2, 0.86);font-family: 微软雅黑;margin-left: 5%">个人中心</div>
+</div>
+<hr>
+    <div style="padding: 0 0 0 5%">
+        <h1 style="margin-left: 11%;font-size: 30px">姓名：{{data.name}}</h1>
+        <h1 style="margin-left: 11%;font-size: 30px">性别：{{data.gender}}</h1>
+        <h1 style="margin-left: 11%;font-size: 30px">电话：{{user}}</h1>
+        <h1 style="margin-left: 11%;font-size: 30px" ng-show="data.share!=='null'">推荐人：{{data.share}}</h1>
+    </div>
+    <!--<div style="margin-top: 40%">-->
+        <!--<input ng-model="$parent.user" type="text" placeholder="领票时的姓名或手机号码" style="border: 2px solid gainsboro;width: 90%;height:48px ;margin: 0 auto;font-size: 20px">-->
+    <!--</div>-->
+<div class="button" ng-click="check()" style="width: 90%;height: 50px;margin: 2% 5%;line-height: 50px;background-color: rgba(165, 2, 2, 0.86);font-size: 30px;color: white;margin-top: 2%">查询</div>
+    <h2 style="text-align: center">座&nbsp&nbsp&nbsp位:{{list.result.rows}}&nbsp排&nbsp{{list.result.cells}}&nbsp座</h2>
+<!--<div style="border-radius: 5px;width: 80%;height: 100px;border: 2px solid rgba(165, 2, 2, 0.86) ;margin: 0 auto">-->
+    <img ng-src="data:image/png;base64,{{list.result.image}}" style="display: block;margin: 0 auto">
+<!--</div>-->
+    <div style="margin-top: 20px;padding: 0 0 0 10%">
+        <h2>地点:杨浦大剧院
+            <div  style="color: rgba(184, 2, 2, 0.86);width: 20%;float: right;margin-right: 10%" ui-sref="map">
+                <img src="img/map.png" alt="" style="max-width: 100%">
+            </div>
+        </h2>
+        <h2>
+
+            时间:4月20日14:00
+        </h2>
+
+    </div>
+    <div style="width: 90%;margin: 0% 5% 0 5% ;height: 60px;" ng-click="quit()">
+    <img style="max-width: 100%" src="img/book_sub.png" alt=""/>
+</div>
+</ion-content>

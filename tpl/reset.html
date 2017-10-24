@@ -1,0 +1,27 @@
+<!--<ion-header-bar style="background-color: rgba(184, 2, 2, 0.86)">-->
+    <!--<div class="header_top1" ui-sref="user1"><img src="img/user_reset1.png" alt=""></div>-->
+<!--</ion-header-bar>-->
+<ion-content style="background: url('img/use_bg.png');overflow: hidden"  overflow-scroll="true">
+    <div class="reset_header">重置密码</div>
+    <hr>
+        <!--重置/输入手机号码-->
+        <div class="reset" style="position: relative">
+            <img src="img/username_1.png" alt=""  class="img_responsive">
+            <input ng-model="$parent.phone" type="text"  name="user" placeholder="请输入手机号码" style="position: absolute;top: 0;left: 0;" >
+        </div>
+        <!--验证码-->
+        <div class="reset_1">
+            <div><img src="img/username_5.png" alt=""></div>
+            <input ng-model="$parent.code" type="text"  name="user" placeholder="请输入验证码" >
+            <a id="register2" href="javascript:" ng-click="on()" ng-class="paraclass" ng-bind="paracont" class="but">获取验证码</a>
+        </div>
+        <!--密码-->
+        <div class="reset_2">
+            <div><img src="img/username_2.png" alt=""></div>
+            <input ng-model="$parent.password" type="password"  name="user" placeholder="请输入密码" >
+        </div>
+        <!--登陆-->
+        <div class="reset_sub" ng-click="reset()">
+            <div><img src="img/user_sub.png" alt=""></div>
+        </div>
+</ion-content>

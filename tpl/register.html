@@ -1,0 +1,54 @@
+
+<ion-header-bar style="background: url('img/use_bg.png');border-bottom: 1px solid grey" >
+    <p style="color: rgba(165, 2, 2, 0.86);font-size: 30px;font-family: 微软雅黑;line-height: 30px">立即注册</p>
+</ion-header-bar>
+<ion-content style="background: url('img/use_bg.png');overflow: hidden"  overflow-scroll="true">
+    <!--<div class="register_header">立即注册</div>-->
+
+    <form action="" name="registerForm">
+    <!--注册账号-->
+    <div class="user1" style="position: relative;">
+        <img src="img/username_1.png" class="img_responsive">
+        <input ng-model="$parent.phone" style="position: absolute;left: 0;top: 0;" type="text" name="username" placeholder="请输入手机号码" >
+    </div>
+        <!--性别-->
+        <div class="sex" >
+            <div><img src="img/username_3.png" alt=""></div>
+            <article>
+                <div class="sex_1" >
+                    <img src="img/sex_6.png" alt="" id="imgs" >
+                </div>
+                <div class="sex_2" >
+                <img src="img/sex_2.png" alt="" id="imge" ng-click="sex1()">
+                <img src="img/sex_3.png" alt="" id="imgx" ng-click="sex2()">
+                </div>
+            </article>
+        </div>
+
+    <!--请输入6-12位密码-->
+    <div class="user3">
+        <div><img src="img/username_2.png" alt=""></div>
+        <input ng-model="$parent.password" type="password"  name="password" placeholder="请输入6-12位密码" ng-model="password" required ng-minlength="6">
+    </div>
+    <!--请输入验证码-->
+    <div class="user5">
+        <div><img src="img/username_5.png" alt=""></div>
+        <input ng-model="$parent.code" type="text"  name="username" placeholder="请输入验证码" >
+        <a id="register1" href="javascript:" ng-click="on()" ng-class="paraclass" ng-bind="paracont" class="but">获取验证码</a>
+    </div>
+        <!--推荐人-->
+        <div class="user7">
+            <div><img src="img/username_1.png" alt=""></div>
+            <input ng-model="$parent.share" type="text" placeholder="推荐人" >
+        </div>
+    <!--注册-->
+    <div class="user6"  ng-click="register()">
+        <div ><img  src="img/username_6.png" alt=""></div>
+    </div>
+        <div style="width: 74%;margin: 5% auto;">
+            <input type="checkbox" ng-model="$parent.agree" style="width: 20px;height: 20px"><span ui-sref="book2">注册即表示同意 <span style="color: rgba(165, 2, 2, 0.86)">《爱来服务用户协议》</span></span>
+        </div>
+    </form>
+
+</ion-content>
+

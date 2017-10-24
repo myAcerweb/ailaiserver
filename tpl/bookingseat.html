@@ -1,0 +1,954 @@
+<loadinga is-loaded="isLoaded">
+<ion-content>
+    <div class="demo">
+        <div id="bg1" style="width: 100%;height: 350px;overflow: hidden;position: relative">
+            <div id="seat-map" ng-click="testscale()" style="width:100%;position: absolute;left: 0;top: 0;">
+                <div class="front" style="background: #a40000;font-size: 2rem;line-height: 2rem;text-align: center;margin-bottom: 5px;">
+                    <!-- 舞台图片-->
+                    <!--<img src="img/stage.jpg" class="img_responsive"/>-->
+                    舞台
+                </div>
+                <div id="seat" style="z-index: 1000;">
+                    <!-- 第三十一列-->
+                    <div id="seat31">
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="31_1" ng-click="clickMe('31_1')"></span>
+                        <span class="seat_changed" id="31_2" ng-click="clickMe('31_2')"></span>
+                        <span class="seat_changed" id="31_3" ng-click="clickMe('31_3')"></span>
+                        <span class="seat_changed" id="31_4" ng-click="clickMe('31_4')"></span>
+                        <span class="seat_changed" id="31_5" ng-click="clickMe('31_5')"></span>
+                        <span class="seat_changed" id="31_6" ng-click="clickMe('31_6')"></span>
+                        <span id="31_7" ng-click="clickMe('31_7')"></span>
+                        <span id="31_8" ng-click="clickMe('31_8')"></span>
+                        <span id="31_9" ng-click="clickMe('31_9')"></span>
+                        <span id="31_10" ng-click="clickMe('31_10')"></span>
+                        <span id="31_11" ng-click="clickMe('31_11')"></span>
+                        <span class="empty"></span>
+                        <span id="31_12" ng-click="clickMe('31_12')"></span>
+                        <span id="31_13" ng-click="clickMe('31_13')"></span>
+                        <span id="31_14" ng-click="clickMe('31_14')"></span>
+                        <span id="31_15" ng-click="clickMe('31_15')"></span>
+                        <span id="31_16" ng-click="clickMe('31_16')"></span>
+                        <span id="31_17" ng-click="clickMe('31_17')"></span>
+                        <span id="31_18" ng-click="clickMe('31_18')"></span>
+                    </div>
+                    <!-- 第二十九列-->
+                    <div id="seat29">
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="29_1" ng-click="clickMe('29_1')"></span>
+                        <span class="seat_changed" id="29_2" ng-click="clickMe('29_2')"></span>
+                        <span class="seat_changed" id="29_3" ng-click="clickMe('29_3')"></span>
+                        <span class="seat_changed"  id="29_4" ng-click="clickMe('29_4')"></span>
+                        <span class="seat_changed"  id="29_5" ng-click="clickMe('29_5')"></span>
+                        <span class="seat_changed" id="29_6" ng-click="clickMe('29_6')"></span>
+                        <span id="29_7" ng-click="clickMe('29_7')"></span>
+                        <span id="29_8" ng-click="clickMe('29_8')"></span>
+                        <span id="29_9" ng-click="clickMe('29_9')"></span>
+                        <span id="29_10" ng-click="clickMe('29_10')"></span>
+                        <span id="29_11" ng-click="clickMe('29_11')"></span>
+                        <span class="empty"></span>
+                        <span id="29_12" ng-click="clickMe('29_12')"></span>
+                        <span id="29_13" ng-click="clickMe('29_13')"></span>
+
+                        <span id="29_14" ng-click="clickMe('29_14')"></span>
+                        <span id="29_15" ng-click="clickMe('29_15')"></span>
+                        <span id="29_16" ng-click="clickMe('29_16')"></span>
+                        <span id="29_17" ng-click="clickMe('29_17')"></span>
+                        <span id="29_18" ng-click="clickMe('29_18')"></span>
+                        <span id="29_19" ng-click="clickMe('29_19')"></span>
+                    </div>
+                    <!-- 第二十七列-->
+                    <div id="seat27">
+                        <span class="seat_changed" id="27_1" ng-click="clickMe('27_1')"></span>
+                        <span class="seat_changed" id="27_2" ng-click="clickMe('27_2')"></span>
+                        <span class="seat_changed" id="27_3" ng-click="clickMe('27_3')"></span>
+                        <span class="seat_changed" id="27_4" ng-click="clickMe('27_4')"></span>
+                        <span class="seat_changed" id="27_5" ng-click="clickMe('27_5')"></span>
+                        <span class="seat_changed" id="27_6" ng-click="clickMe('27_6')"></span>
+                        <span class="seat_changed" id="27_7" ng-click="clickMe('27_7')"></span>
+                        <span class="seat_changed" id="27_8" ng-click="clickMe('27_8')"></span>
+                        <span id="27_9" ng-click="clickMe('27_9')"></span>
+                        <span id="27_10" ng-click="clickMe('27_10')"></span>
+                        <span id="27_11" ng-click="clickMe('27_11')"></span>
+                        <span id="27_12" ng-click="clickMe('27_12')"></span>
+                        <span id="27_13" ng-click="clickMe('27_13')"></span>
+                        <span class="empty"></span>
+                        <span id="27_14" ng-click="clickMe('27_14')"></span>
+                        <span id="27_15" ng-click="clickMe('27_15')"></span>
+                        <span id="27_16" ng-click="clickMe('27_16')"></span>
+                        <span id="27_17" ng-click="clickMe('27_17')"></span>
+                        <span id="27_18" ng-click="clickMe('27_18')"></span>
+                        <span id="27_19" ng-click="clickMe('27_19')"></span>
+                        <span id="27_20" ng-click="clickMe('27_20')"></span>
+                        <span id="27_21" ng-click="clickMe('27_21')"></span>
+                        <span id="27_22" ng-click="clickMe('27_23')"></span>
+                    </div>
+                    <!-- 第二十五列-->
+                    <div id="seat25">
+                        <span class="seat_changed" id="25_1" ng-click="clickMe('25_1')"></span>
+                        <span class="seat_changed" id="25_2" ng-click="clickMe('25_2')"></span>
+                        <span class="seat_changed" id="25_3" ng-click="clickMe('25_3')"></span>
+                        <span class="seat_changed" id="25_4" ng-click="clickMe('25_4')"></span>
+                        <span class="seat_changed" id="25_5" ng-click="clickMe('25_5')"></span>
+                        <span class="seat_changed" id="25_6" ng-click="clickMe('25_6')"></span>
+                        <span class="seat_changed" id="25_7" ng-click="clickMe('25_7')"></span>
+                        <span class="seat_changed" id="25_8" ng-click="clickMe('25_8')"></span>
+                        <span id="25_9" ng-click="clickMe('25_9')"></span>
+                        <span id="25_10" ng-click="clickMe('25_10')"></span>
+                        <span id="25_11" ng-click="clickMe('25_11')"></span>
+                        <span id="25_12" ng-click="clickMe('25_12')"></span>
+                        <span id="25_13" ng-click="clickMe('25_13')"></span>
+                        <span class="empty"></span>
+                        <span id="25_14" ng-click="clickMe('25_14')"></span>
+                        <span id="25_15" ng-click="clickMe('25_15')"></span>
+                        <span id="25_16" ng-click="clickMe('25_16')"></span>
+                        <span id="25_17" ng-click="clickMe('25_17')"></span>
+                        <span id="25_18" ng-click="clickMe('25_18')"></span>
+                        <span id="25_19" ng-click="clickMe('25_19')"></span>
+                        <span id="25_20" ng-click="clickMe('25_20')"></span>
+                        <span id="25_21" ng-click="clickMe('25_21')"></span>
+                        <span id="25_22" ng-click="clickMe('25_22')"></span>
+                    </div>
+                    <!-- 第二十三列-->
+                    <div id="seat23">
+                        <span class="seat_changed" id="23_1" ng-click="clickMe('23_1')"></span>
+                        <span class="seat_changed" id="23_2" ng-click="clickMe('23_2')"></span>
+                        <span class="seat_changed" id="23_3" ng-click="clickMe('23_3')"></span>
+                        <span class="seat_changed" id="23_4" ng-click="clickMe('23_4')"></span>
+                        <span class="seat_changed" id="23_5" ng-click="clickMe('23_5')"></span>
+                        <span class="seat_changed" id="23_6" ng-click="clickMe('23_6')"></span>
+                        <span class="seat_changed" id="23_7" ng-click="clickMe('23_7')"></span>
+                        <span class="seat_changed" id="23_8" ng-click="clickMe('23_8')"></span>
+                        <span id="23_9" ng-click="clickMe('23_9')"></span>
+                        <span id="23_10" ng-click="clickMe('23_10')"></span>
+                        <span id="23_11" ng-click="clickMe('23_11')"></span>
+                        <span id="23_12" ng-click="clickMe('23_12')"></span>
+                        <span id="23_13" ng-click="clickMe('23_13')"></span>
+                        <span class="empty"></span>
+                        <span id="23_14" ng-click="clickMe('23_14')"></span>
+                        <span id="23_15" ng-click="clickMe('23_15')"></span>
+                        <span id="23_16" ng-click="clickMe('23_16')"></span>
+                        <span id="23_17" ng-click="clickMe('23_17')"></span>
+                        <span id="23_18" ng-click="clickMe('23_18')"></span>
+                        <span id="23_19" ng-click="clickMe('23_19')"></span>
+                        <span id="23_20" ng-click="clickMe('23_20')"></span>
+                        <span id="23_21" ng-click="clickMe('23_21')"></span>
+                        <span id="23_22" ng-click="clickMe('23_22')"></span>
+                    </div>
+                    <!-- 第二十一列-->
+                    <div id="seat21">
+                        <span class="seat_changed" id="21_1" ng-click="clickMe('21_1')"></span>
+                        <span class="seat_changed" id="21_2" ng-click="clickMe('21_2')"></span>
+                        <span class="seat_changed" id="21_3" ng-click="clickMe('21_3')"></span>
+                        <span class="seat_changed" id="21_4" ng-click="clickMe('21_4')"></span>
+                        <span class="seat_changed" id="21_5" ng-click="clickMe('21_5')"></span>
+                        <span class="seat_changed" id="21_6" ng-click="clickMe('21_6')"></span>
+                        <span class="seat_changed" id="21_7" ng-click="clickMe('21_7')"></span>
+                        <span class="seat_changed" id="21_8" ng-click="clickMe('21_8')"></span>
+                        <span id="21_9" ng-click="clickMe('21_9')"></span>
+                        <span id="21_10" ng-click="clickMe('21_10')"></span>
+                        <span id="21_11" ng-click="clickMe('21_11')"></span>
+                        <span id="21_12" ng-click="clickMe('21_12')"></span>
+                        <span id="21_13" ng-click="clickMe('21_13')"></span>
+                        <span class="empty"></span>
+                        <span id="21_14" ng-click="clickMe('21_14')"></span>
+                        <span id="21_15" ng-click="clickMe('21_15')"></span>
+                        <span id="21_16" ng-click="clickMe('21_16')"></span>
+                        <span id="21_17" ng-click="clickMe('21_17')"></span>
+                        <span id="21_18" ng-click="clickMe('21_18')"></span>
+                        <span id="21_19" ng-click="clickMe('21_19')"></span>
+                        <span id="21_20" ng-click="clickMe('21_20')"></span>
+                        <span id="21_21" ng-click="clickMe('21_21')"></span>
+                        <span id="21_22" ng-click="clickMe('21_22')"></span>
+                        <span id="21_23" ng-click="clickMe('21_23')"></span>
+                    </div>
+                    <!-- 第十九列-->
+                    <div id="seat19">
+                        <span class="seat_changed" id="19_1" ng-click="clickMe('19_1')"></span>
+                        <span class="seat_changed" id="19_2" ng-click="clickMe('19_2')"></span>
+                        <span class="seat_changed" id="19_3" ng-click="clickMe('19_3')"></span>
+                        <span class="seat_changed" id="19_4" ng-click="clickMe('19_4')"></span>
+                        <span class="seat_changed" id="19_5" ng-click="clickMe('19_5')"></span>
+                        <span class="seat_changed" id="19_6" ng-click="clickMe('19_6')"></span>
+                        <span class="seat_changed" id="19_7" ng-click="clickMe('19_7')"></span>
+                        <span class="seat_changed" id="19_8" ng-click="clickMe('19_8')"></span>
+                        <span id="19_9" ng-click="clickMe('19_9')"></span>
+                        <span id="19_10" ng-click="clickMe('19_10')"></span>
+                        <span id="19_11" ng-click="clickMe('19_11')"></span>
+                        <span id="19_12" ng-click="clickMe('19_12')"></span>
+                        <span id="19_13" ng-click="clickMe('19_13')"></span>
+                        <span class="empty"></span>
+                        <span id="19_14" ng-click="clickMe('19_14')"></span>
+                        <span id="19_15" ng-click="clickMe('19_15')"></span>
+                        <span id="19_16" ng-click="clickMe('19_16')"></span>
+                        <span id="19_17" ng-click="clickMe('19_17')"></span>
+                        <span id="19_18" ng-click="clickMe('19_18')"></span>
+                        <span id="19_19" ng-click="clickMe('19_19')"></span>
+                        <span id="19_20" ng-click="clickMe('19_20')"></span>
+                        <span id="19_21" ng-click="clickMe('19_21')"></span>
+                        <span id="19_22" ng-click="clickMe('19_22')"></span>
+                        <span id="19_23" ng-click="clickMe('19_23')"></span>
+                    </div>
+                    <!-- 第十七列-->
+                    <div id="seat17">
+                        <span class="seat_changed" id="17_1" ng-click="clickMe('17_1')"></span>
+                        <span class="seat_changed" id="17_2" ng-click="clickMe('17_2')"></span>
+                        <span class="seat_changed" id="17_3" ng-click="clickMe('17_3')"></span>
+                        <span class="seat_changed" id="17_4" ng-click="clickMe('17_4')"></span>
+                        <span class="seat_changed" id="17_5" ng-click="clickMe('17_5')"></span>
+                        <span class="seat_changed" id="17_6" ng-click="clickMe('17_6')"></span>
+                        <span class="seat_changed" id="17_7" ng-click="clickMe('17_7')"></span>
+                        <span class="seat_changed" id="17_8" ng-click="clickMe('17_8')"></span>
+                        <span id="17_9" ng-click="clickMe('17_9')"></span>
+                        <span id="17_10" ng-click="clickMe('17_10')"></span>
+                        <span id="17_11" ng-click="clickMe('17_11')"></span>
+                        <span id="17_12" ng-click="clickMe('17_12')"></span>
+                        <span  id="17_13" ng-click="clickMe('17_13')"></span>
+                        <span class="empty"></span>
+                        <span id="17_14" ng-click="clickMe('17_14')"></span>
+                        <span id="17_15" ng-click="clickMe('17_15')"></span>
+                        <span id="17_16" ng-click="clickMe('17_16')"></span>
+                        <span id="17_17" ng-click="clickMe('17_17')"></span>
+                        <span id="17_18" ng-click="clickMe('17_18')"></span>
+                        <span id="17_19" ng-click="clickMe('17_19')"></span>
+                        <span id="17_20" ng-click="clickMe('17_20')"></span>
+                        <span id="17_21" ng-click="clickMe('17_21')"></span>
+                        <span id="17_22" ng-click="clickMe('17_22')"></span>
+                        <span id="17_23" ng-click="clickMe('17_23')"></span>
+                        <span class="seat_changed" id="17_24" ng-click="clickMe('17_24')"></span>
+                    </div>
+                    <!-- 第十五列-->
+                    <div id="seat15">
+                        <span class="seat_changed" id="15_1" ng-click="clickMe('14_1')"></span>
+                        <span class="seat_changed" id="15_2" ng-click="clickMe('14_2')"></span>
+                        <span class="seat_changed" id="15_3" ng-click="clickMe('14_3')"></span>
+                        <span class="seat_changed" id="15_4" ng-click="clickMe('14_4')"></span>
+                        <span class="seat_changed" id="15_5" ng-click="clickMe('14_5')"></span>
+                        <span class="seat_changed" id="15_6" ng-click="clickMe('14_6')"></span>
+                        <span class="seat_changed" id="15_7" ng-click="clickMe('14_7')"></span>
+                        <span class="seat_changed" id="15_8" ng-click="clickMe('14_8')"></span>
+                        <span id="15_9" ng-click="clickMe('14_9')"></span>
+                        <span id="15_10" ng-click="clickMe('14_10')"></span>
+                        <span id="15_11" ng-click="clickMe('14_11')"></span>
+                        <span id="15_12" ng-click="clickMe('14_12')"></span>
+                        <span id="15_13" ng-click="clickMe('14_13')"></span>
+                        <span class="empty"></span>
+                        <span id="15_14" ng-click="clickMe('14_14')"></span>
+                        <span id="15_15" ng-click="clickMe('14_15')"></span>
+                        <span id="15_16" ng-click="clickMe('14_16')"></span>
+                        <span id="15_17" ng-click="clickMe('14_17')"></span>
+                        <span id="15_18" ng-click="clickMe('14_18')"></span>
+                        <span id="15_19" ng-click="clickMe('14_19')"></span>
+                        <span id="15_20" ng-click="clickMe('14_20')"></span>
+                        <span id="15_21" ng-click="clickMe('14_21')"></span>
+                        <span id="15_22" ng-click="clickMe('14_22')"></span>
+                        <span id="15_23" ng-click="clickMe('14_23')"></span>
+                        <span class="seat_changed" id="15_24" ng-click="clickMe('14_24')"></span>
+                    </div>
+                    <!-- 第十三列-->
+                    <div id="seat13">
+                        <span class="seat_changed" id="13_1" ng-click="clickMe('13_1')"></span>
+                        <span class="seat_changed" id="13_2" ng-click="clickMe('13_2')"></span>
+                        <span class="seat_changed" id="13_3" ng-click="clickMe('13_3')"></span>
+                        <span class="seat_changed" id="13_4" ng-click="clickMe('13_4')"></span>
+                        <span class="seat_changed" id="13_5" ng-click="clickMe('13_5')"></span>
+                        <span class="seat_changed" id="13_6" ng-click="clickMe('13_6')"></span>
+                        <span class="seat_changed" id="13_7" ng-click="clickMe('13_7')"></span>
+                        <span class="seat_changed" id="13_8" ng-click="clickMe('13_8')"></span>
+                        <span id="13_9" ng-click="clickMe('13_9')"></span>
+                        <span id="13_10" ng-click="clickMe('13_10')"></span>
+                        <span id="13_11" ng-click="clickMe('13_11')"></span>
+                        <span id="13_12" ng-click="clickMe('13_12')"></span>
+                        <span id="13_13" ng-click="clickMe('13_13')"></span>
+                        <span class="empty"></span>
+                        <span id="13_14" ng-click="clickMe('13_14')"></span>
+                        <span id="13_15" ng-click="clickMe('13_15')"></span>
+                        <span id="13_16" ng-click="clickMe('13_16')"></span>
+                        <span id="13_17" ng-click="clickMe('13_17')"></span>
+                        <span id="13_18" ng-click="clickMe('13_18')"></span>
+                        <span id="13_19" ng-click="clickMe('13_19')"></span>
+                        <span id="13_20" ng-click="clickMe('13_20')"></span>
+                        <span id="13_21" ng-click="clickMe('13_21')"></span>
+                        <span id="13_22" ng-click="clickMe('13_22')"></span>
+                        <span id="13_23" ng-click="clickMe('13_23')"></span>
+                        <span class="seat_changed" id="13_24" ng-click="clickMe('13_24')"></span>
+                    </div>
+                    <!-- 第十一列-->
+                    <div id="seat11">
+                        <span class="seat_changed" id="11_1" ng-click="clickMe('11_1')"></span>
+                        <span class="seat_changed" id="11_2" ng-click="clickMe('11_2')"></span>
+                        <span class="seat_changed" id="11_3" ng-click="clickMe('11_3')"></span>
+                        <span class="seat_changed" id="11_4" ng-click="clickMe('11_4')"></span>
+                        <span class="seat_changed" id="11_5" ng-click="clickMe('11_5')"></span>
+                        <span class="seat_changed" id="11_6" ng-click="clickMe('11_6')"></span>
+                        <span class="seat_changed" id="11_7" ng-click="clickMe('11_7')"></span>
+                        <span class="seat_changed" id="11_8" ng-click="clickMe('11_8')"></span>
+                        <span id="11_9" ng-click="clickMe('11_9')"></span>
+                        <span id="11_10" ng-click="clickMe('11_10')"></span>
+                        <span id="11_11" ng-click="clickMe('11_11')"></span>
+                        <span id="11_12" ng-click="clickMe('11_12')"></span>
+                        <span id="11_13" ng-click="clickMe('11_13')"></span>
+                        <span class="empty"></span>
+                        <span id="11_14" ng-click="clickMe('11_14')"></span>
+                        <span id="11_15" ng-click="clickMe('11_15')"></span>
+                        <span id="11_16" ng-click="clickMe('11_16')"></span>
+                        <span id="11_17" ng-click="clickMe('11_17')"></span>
+                        <span id="11_18" ng-click="clickMe('11_18')"></span>
+                        <span id="11_19" ng-click="clickMe('11_19')"></span>
+                        <span id="11_20" ng-click="clickMe('11_20')"></span>
+                        <span id="11_21" ng-click="clickMe('11_21')"></span>
+                        <span id="11_22" ng-click="clickMe('11_22')"></span>
+                        <span id="11_23" ng-click="clickMe('11_23')"></span>
+                        <span class="seat_changed" id="11_24" ng-click="clickMe('11_24')"></span>
+                    </div>
+                    <!-- 第九列-->
+                    <div id="seat9">
+                        <span class="seat_changed" id="9_1" ng-click="clickMe('9_1')"></span>
+                        <span class="seat_changed" id="9_2" ng-click="clickMe('9_2')"></span>
+                        <span class="seat_changed" id="9_3" ng-click="clickMe('9_3')"></span>
+                        <span class="seat_changed" id="9_4" ng-click="clickMe('9_4')"></span>
+                        <span class="seat_changed" id="9_5" ng-click="clickMe('9_5')"></span>
+                        <span class="seat_changed" id="9_6" ng-click="clickMe('9_6')"></span>
+                        <span class="seat_changed" id="9_7" ng-click="clickMe('9_7')"></span>
+                        <span class="seat_changed" id="9_8" ng-click="clickMe('9_8')"></span>
+                        <span id="9_9" ng-click="clickMe('9_9')"></span>
+                        <span id="9_10" ng-click="clickMe('9_10')"></span>
+                        <span id="9_11" ng-click="clickMe('9_11')"></span>
+                        <span id="9_12" ng-click="clickMe('9_12')"></span>
+                        <span id="9_13" ng-click="clickMe('9_13')"></span>
+                        <span class="empty"></span>
+                        <span id="9_14" ng-click="clickMe('9_14')"></span>
+                        <span id="9_15" ng-click="clickMe('9_15')"></span>
+                        <span id="9_16" ng-click="clickMe('9_16')"></span>
+                        <span id="9_17" ng-click="clickMe('9_17')"></span>
+                        <span id="9_18" ng-click="clickMe('9_18')"></span>
+                        <span id="9_19" ng-click="clickMe('9_19')"></span>
+                        <span id="9_20" ng-click="clickMe('9_20')"></span>
+                        <span id="9_21" ng-click="clickMe('9_21')"></span>
+                        <span id="9_22" ng-click="clickMe('9_22')"></span>
+                        <span id="9_23" ng-click="clickMe('9_23')"></span>
+                        <span class="seat_changed" id="9_24" ng-click="clickMe('9_24')"></span>
+                    </div>
+                    <!-- 第七列-->
+                    <div id="seat7">
+                        <span class="seat_changed" id="7_1" ng-click="clickMe('7_1')"></span>
+                        <span class="seat_changed" id="7_2" ng-click="clickMe('7_2')"></span>
+                        <span class="seat_changed" id="7_3" ng-click="clickMe('7_3')"></span>
+                        <span class="seat_changed" id="7_4" ng-click="clickMe('7_4')"></span>
+                        <span class="seat_changed" id="7_5" ng-click="clickMe('7_5')"></span>
+                        <span class="seat_changed" id="7_6" ng-click="clickMe('7_6')"></span>
+                        <span class="seat_changed" id="7_7" ng-click="clickMe('7_7')"></span>
+                        <span class="seat_changed" id="7_8" ng-click="clickMe('7_8')"></span>
+                        <span id="7_9" ng-click="clickMe('7_9')"></span>
+                        <span class="seat_changed" id="7_10" ng-click="clickMe('7_10')"></span>
+                        <span id="7_11" ng-click="clickMe('7_11')"></span>
+                        <span id="7_12" ng-click="clickMe('7_12')"></span>
+                        <span id="7_13" ng-click="clickMe('7_13')"></span>
+                        <span class="empty"></span>
+                        <span id="7_14" ng-click="clickMe('7_14')"></span>
+                        <span id="7_15" ng-click="clickMe('7_15')"></span>
+                        <span id="7_16" ng-click="clickMe('7_16')"></span>
+                        <span id="7_17" ng-click="clickMe('7_17')"></span>
+                        <span id="7_18" ng-click="clickMe('7_18')"></span>
+                        <span id="7_19" ng-click="clickMe('7_19')"></span>
+                        <span id="7_20" ng-click="clickMe('7_20')"></span>
+                        <span id="7_21" ng-click="clickMe('7_21')"></span>
+                        <span id="7_22" ng-click="clickMe('7_22')"></span>
+                        <span id="7_23" ng-click="clickMe('7_23')"></span>
+                        <span class="seat_changed" id="7_24" ng-click="clickMe('7_24')"></span>
+                    </div>
+                    <!-- 第五列-->
+                    <div id="seat5">
+                        <span class="seat_changed" id="5_1" ng-click="clickMe('5_1')"></span>
+                        <span class="seat_changed" id="5_2" ng-click="clickMe('5_2')"></span>
+                        <span class="seat_changed" id="5_3" ng-click="clickMe('5_3')"></span>
+                        <span class="seat_changed" id="5_4" ng-click="clickMe('5_4')"></span>
+                        <span class="seat_changed" id="5_5" ng-click="clickMe('5_5')"></span>
+                        <span class="seat_changed" id="5_6" ng-click="clickMe('5_6')"></span>
+                        <span class="seat_changed" id="5_7" ng-click="clickMe('5_7')"></span>
+                        <span class="seat_changed" id="5_8" ng-click="clickMe('5_8')"></span>
+                        <span id="5_9" ng-click="clickMe('5_9')"></span>
+                        <span class="seat_changed" id="5_10" ng-click="clickMe('5_10')"></span>
+                        <span id="5_11" ng-click="clickMe('5_11')"></span>
+                        <span id="5_12" ng-click="clickMe('5_12')"></span>
+                        <span id="5_13" ng-click="clickMe('5_13')"></span>
+                        <span class="empty"></span>
+                        <span id="5_14" ng-click="clickMe('5_14')"></span>
+                        <span id="5_15" ng-click="clickMe('5_15')"></span>
+                        <span id="5_16" ng-click="clickMe('5_16')"></span>
+                        <span id="5_17" ng-click="clickMe('5_17')"></span>
+                        <span id="5_18" ng-click="clickMe('5_18')"></span>
+                        <span id="5_19" ng-click="clickMe('5_19')"></span>
+                        <span id="5_20" ng-click="clickMe('5_20')"></span>
+                        <span id="5_21" ng-click="clickMe('5_21')"></span>
+                        <span id="5_22" ng-click="clickMe('5_22')"></span>
+                        <span id="5_23" ng-click="clickMe('5_23')"></span>
+                        <span class="seat_changed" id="5_24" ng-click="clickMe('5_24')"></span>
+                    </div>
+                    <!-- 第三列-->
+                    <div id="seat3">
+                        <span class="seat_changed" id="3_1" ng-click="clickMe('3_1')"></span>
+                        <span class="seat_changed" id="3_2" ng-click="clickMe('3_2')"></span>
+                        <span class="seat_changed" id="3_3" ng-click="clickMe('3_3')"></span>
+                        <span class="seat_changed" id="3_4" ng-click="clickMe('3_4')"></span>
+                        <span class="seat_changed" id="3_5" ng-click="clickMe('3_5')"></span>
+                        <span class="seat_changed" id="3_6" ng-click="clickMe('3_6')"></span>
+                        <span class="seat_changed" id="3_7" ng-click="clickMe('3_7')"></span>
+                        <span class="seat_changed" id="3_8" ng-click="clickMe('3_8')"></span>
+                        <span class="seat_changed" id="3_9" ng-click="clickMe('3_9')"></span>
+                        <span class="seat_changed" id="3_10" ng-click="clickMe('3_10')"></span>
+                        <span id="3_11" ng-click="clickMe('3_11')"></span>
+                        <span id="3_12" ng-click="clickMe('3_12')"></span>
+                        <span id="3_13" ng-click="clickMe('3_13')"></span>
+                        <span class="empty"></span>
+                        <span id="3_14" ng-click="clickMe('3_14')"></span>
+                        <span id="3_15" ng-click="clickMe('3_15')"></span>
+                        <span id="3_16" ng-click="clickMe('3_16')"></span>
+                        <span id="3_17" ng-click="clickMe('3_17')"></span>
+                        <span id="3_18" ng-click="clickMe('3_18')"></span>
+                        <span id="3_19" ng-click="clickMe('3_19')"></span>
+                        <span id="3_20" ng-click="clickMe('3_20')"></span>
+                        <span id="3_21" ng-click="clickMe('3_21')"></span>
+                        <span id="3_22" ng-click="clickMe('3_22')"></span>
+                        <span id="3_23" ng-click="clickMe('3_23')"></span>
+                        <span class="seat_changed" id="3_24" ng-click="clickMe('3_24')"></span>
+                    </div>
+                    <!-- 第一列-->
+                    <div id="seat1">
+                        <span class="seat_changed" id="1_1" ng-click="clickMe('1_1')"></span>
+                        <span class="seat_changed" id="1_2" ng-click="clickMe('1_2')"></span>
+                        <span class="seat_changed" id="1_3" ng-click="clickMe('1_3')"></span>
+                        <span class="seat_changed" id="1_4" ng-click="clickMe('1_4')"></span>
+                        <span class="seat_changed" id="1_5" ng-click="clickMe('1_5')"></span>
+                        <span class="seat_changed" id="1_6" ng-click="clickMe('1_6')"></span>
+                        <span class="seat_changed" id="1_7" ng-click="clickMe('1_7')"></span>
+                        <span class="seat_changed" id="1_8" ng-click="clickMe('1_8')"></span>
+                        <span class="seat_changed" id="1_9" ng-click="clickMe('1_9')"></span>
+                        <span class="seat_changed" id="1_10" ng-click="clickMe('1_10')"></span>
+                        <span id="1_11" ng-click="clickMe('1_11')"></span>
+                        <span id="1_12" ng-click="clickMe('1_12')"></span>
+                        <span  id="1_13" ng-click="clickMe('1_13')"></span>
+                        <span class="empty"></span>
+                        <span id="1_14" ng-click="clickMe('1_14')"></span>
+                        <span id="1_15" ng-click="clickMe('1_15')"></span>
+                        <span id="1_16" ng-click="clickMe('1_16')"></span>
+                        <span id="1_17" ng-click="clickMe('1_17')"></span>
+                        <span id="1_18" ng-click="clickMe('1_18')"></span>
+                        <span id="1_19" ng-click="clickMe('1_19')"></span>
+                        <span id="1_20" ng-click="clickMe('1_20')"></span>
+                        <span id="1_21" ng-click="clickMe('1_21')"></span>
+                        <span id="1_22" ng-click="clickMe('1_22')"></span>
+                        <span id="1_23" ng-click="clickMe('1_23')"></span>
+                        <span class="seat_changed" id="1_24" ng-click="clickMe('1_24')"></span>
+                    </div>
+                    <!-- 中间显示列数-->
+                    <div id="seat_middle">
+                        <span >1</span>
+                        <span >2</span>
+                        <span >3</span>
+                        <span >4</span>
+                        <span >5</span>
+                        <span >6</span>
+                        <span >7</span>
+                        <span >8</span>
+                        <span >9</span>
+                        <span >10</span>
+                        <span >11</span>
+                        <span >12</span>
+                        <span >13</span>
+                        <span></span>
+                        <span >14</span>
+                        <span >15</span>
+                        <span >16</span>
+                        <span >17</span>
+                        <span >18</span>
+                        <span >19</span>
+                        <span >20</span>
+                        <span >21</span>
+                        <span >22</span>
+                        <span >23</span>
+                        <span >24</span>
+                    </div>
+                    <!-- 第二列-->
+                    <div id="seat2">
+                        <span class="seat_changed" id="2_1" ng-click="clickMe('2_1')"></span>
+                        <span class="seat_changed" id="2_2" ng-click="clickMe('2_2')"></span>
+                        <span class="seat_changed" id="2_3" ng-click="clickMe('2_3')"></span>
+                        <span class="seat_changed" id="2_4" ng-click="clickMe('2_4')"></span>
+                        <span class="seat_changed" id="2_5" ng-click="clickMe('2_5')"></span>
+                        <span class="seat_changed" id="2_6" ng-click="clickMe('2_6')"></span>
+                        <span class="seat_changed" id="2_7" ng-click="clickMe('2_7')"></span>
+                        <span class="seat_changed" id="2_8" ng-click="clickMe('2_8')"></span>
+                        <span class="seat_changed" id="2_9" ng-click="clickMe('2_9')"></span>
+                        <span class="seat_changed" id="2_10" ng-click="clickMe('2_10')"></span>
+                        <span class="seat_changed" id="2_11" ng-click="clickMe('2_11')"></span>
+                        <span id="2_12" ng-click="clickMe('2_12')"></span>
+                        <span id="2_13" ng-click="clickMe('2_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="2_14" ng-click="clickMe('2_14')"></span>
+                        <span class="seat_changed" id="2_15" ng-click="clickMe('2_15')"></span>
+                        <span id="2_16" ng-click="clickMe('2_16')"></span>
+                        <span id="2_17" ng-click="clickMe('2_17')"></span>
+                        <span id="2_18" ng-click="clickMe('2_18')"></span>
+                        <span id="2_19" ng-click="clickMe('2_19')"></span>
+                        <span id="2_20" ng-click="clickMe('2_20')"></span>
+                        <span id="2_21" ng-click="clickMe('2_21')"></span>
+                        <span id="2_22" ng-click="clickMe('2_22')"></span>
+                        <span id="2_23" ng-click="clickMe('2_23')"></span>
+                        <span class="seat_changed" id="2_24" ng-click="clickMe('2_24')"></span>
+                    </div>
+                    <!-- 第四列-->
+                    <div id="seat4">
+                        <span class="seat_changed" id="4_1" ng-click="clickMe('4_1')"></span>
+                        <span class="seat_changed" id="4_2" ng-click="clickMe('4_2')"></span>
+                        <span class="seat_changed" id="4_3" ng-click="clickMe('4_3')"></span>
+                        <span class="seat_changed" id="4_4" ng-click="clickMe('4_4')"></span>
+                        <span class="seat_changed" id="4_5" ng-click="clickMe('4_5')"></span>
+                        <span class="seat_changed" id="4_6" ng-click="clickMe('4_6')"></span>
+                        <span class="seat_changed" id="4_7" ng-click="clickMe('4_7')"></span>
+                        <span class="seat_changed" id="4_8" ng-click="clickMe('4_8')"></span>
+                        <span class="seat_changed" id="4_9" ng-click="clickMe('4_9')"></span>
+                        <span class="seat_changed" id="4_10" ng-click="clickMe('4_10')"></span>
+                        <span class="seat_changed" id="4_11" ng-click="clickMe('4_11')"></span>
+                        <span id="4_12" ng-click="clickMe('4_12')"></span>
+                        <span id="4_13" ng-click="clickMe('4_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="4_14" ng-click="clickMe('4_14')"></span>
+                        <span class="seat_changed" id="4_15" ng-click="clickMe('4_15')"></span>
+                        <span id="4_16" ng-click="clickMe('4_16')"></span>
+                        <span id="4_17" ng-click="clickMe('4_17')"></span>
+                        <span id="4_18" ng-click="clickMe('4_18')"></span>
+                        <span id="4_19" ng-click="clickMe('4_19')"></span>
+                        <span id="4_20" ng-click="clickMe('4_20')"></span>
+                        <span id="4_21" ng-click="clickMe('4_21')"></span>
+                        <span id="4_22" ng-click="clickMe('4_22')"></span>
+                        <span id="4_23" ng-click="clickMe('4_23')"></span>
+                        <span class="seat_changed" id="4_24" ng-click="clickMe('4_24')"></span>
+                    </div>
+                    <!-- 第六列-->
+                    <div id="seat6">
+                        <span class="seat_changed" id="6_1" ng-click="clickMe('6_1')"></span>
+                        <span class="seat_changed" id="6_2" ng-click="clickMe('6_2')"></span>
+                        <span class="seat_changed" id="6_3" ng-click="clickMe('6_3')"></span>
+                        <span class="seat_changed" id="6_4" ng-click="clickMe('6_4')"></span>
+                        <span class="seat_changed" id="6_5" ng-click="clickMe('6_5')"></span>
+                        <span class="seat_changed" id="6_6" ng-click="clickMe('6_6')"></span>
+                        <span class="seat_changed" id="6_7" ng-click="clickMe('6_7')"></span>
+                        <span class="seat_changed" id="6_8" ng-click="clickMe('6_8')"></span>
+                        <span class="seat_changed" id="6_9" ng-click="clickMe('6_9')"></span>
+                        <span class="seat_changed" id="6_10" ng-click="clickMe('6_10')"></span>
+                        <span class="seat_changed" id="6_11" ng-click="clickMe('6_11')"></span>
+                        <span id="6_12" ng-click="clickMe('6_12')"></span>
+                        <span id="6_13" ng-click="clickMe('6_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="6_14" ng-click="clickMe('6_14')"></span>
+                        <span class="seat_changed" id="6_15" ng-click="clickMe('6_15')"></span>
+                        <span id="6_16" ng-click="clickMe('6_16')"></span>
+                        <span id="6_17" ng-click="clickMe('6_17')"></span>
+                        <span id="6_18" ng-click="clickMe('6_18')"></span>
+                        <span id="6_19" ng-click="clickMe('6_19')"></span>
+                        <span id="6_20" ng-click="clickMe('6_20')"></span>
+                        <span id="6_21" ng-click="clickMe('6_21')"></span>
+                        <span id="6_22" ng-click="clickMe('6_22')"></span>
+                        <span id="6_23" ng-click="clickMe('6_23')"></span>
+                        <span class="seat_changed" id="6_24" ng-click="clickMe('6_24')"></span>
+                    </div>
+                    <!-- 第八列-->
+                    <div id="seat8">
+                        <span class="seat_changed" id="8_1" ng-click="clickMe('8_1')"></span>
+                        <span class="seat_changed" id="8_2" ng-click="clickMe('8_2')"></span>
+                        <span class="seat_changed" id="8_3" ng-click="clickMe('8_3')"></span>
+                        <span class="seat_changed" id="8_4" ng-click="clickMe('8_4')"></span>
+                        <span class="seat_changed" id="8_5" ng-click="clickMe('8_5')"></span>
+                        <span class="seat_changed" id="8_6" ng-click="clickMe('8_6')"></span>
+                        <span class="seat_changed" id="8_7" ng-click="clickMe('8_7')"></span>
+                        <span class="seat_changed" id="8_8" ng-click="clickMe('8_8')"></span>
+                        <span class="seat_changed" id="8_9" ng-click="clickMe('8_9')"></span>
+                        <span class="seat_changed" id="8_10" ng-click="clickMe('8_10')"></span>
+                        <span class="seat_changed" id="8_11" ng-click="clickMe('8_11')"></span>
+                        <span id="8_12" ng-click="clickMe('8_12')"></span>
+                        <span id="8_13" ng-click="clickMe('8_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="8_14" ng-click="clickMe('8_14')"></span>
+                        <span class="seat_changed" id="8_15" ng-click="clickMe('8_15')"></span>
+                        <span id="8_16" ng-click="clickMe('8_16')"></span>
+                        <span id="8_17" ng-click="clickMe('8_17')"></span>
+                        <span id="8_18" ng-click="clickMe('8_18')"></span>
+                        <span id="8_19" ng-click="clickMe('8_19')"></span>
+                        <span id="8_20" ng-click="clickMe('8_20')"></span>
+                        <span id="8_21" ng-click="clickMe('8_21')"></span>
+                        <span id="8_22" ng-click="clickMe('8_22')"></span>
+                        <span id="8_23" ng-click="clickMe('8_23')"></span>
+                        <span class="seat_changed" id="8_24" ng-click="clickMe('8_24')"></span>
+                    </div>
+                    <!-- 第十列-->
+                    <div id="seat10">
+                        <span class="seat_changed" id="10_1" ng-click="clickMe('10_1')"></span>
+                        <span class="seat_changed" id="10_2" ng-click="clickMe('10_2')"></span>
+                        <span class="seat_changed" id="10_3" ng-click="clickMe('10_3')"></span>
+                        <span class="seat_changed" id="10_4" ng-click="clickMe('10_4')"></span>
+                        <span class="seat_changed" id="10_5" ng-click="clickMe('10_5')"></span>
+                        <span class="seat_changed" id="10_6" ng-click="clickMe('10_6')"></span>
+                        <span class="seat_changed" id="10_7" ng-click="clickMe('10_7')"></span>
+                        <span class="seat_changed" id="10_8" ng-click="clickMe('10_8')"></span>
+                        <span class="seat_changed" id="10_9" ng-click="clickMe('10_9')"></span>
+                        <span class="seat_changed" id="10_10" ng-click="clickMe('10_10')"></span>
+                        <span id="10_11" ng-click="clickMe('10_11')"></span>
+                        <span id="10_12" ng-click="clickMe('10_12')"></span>
+                        <span id="10_13" ng-click="clickMe('10_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="10_14" ng-click="clickMe('10_14')"></span>
+                        <span class="seat_changed" id="10_15" ng-click="clickMe('10_15')"></span>
+                        <span id="10_16" ng-click="clickMe('10_16')"></span>
+                        <span id="10_17" ng-click="clickMe('10_17')"></span>
+                        <span id="10_18" ng-click="clickMe('10_18')"></span>
+                        <span id="10_19" ng-click="clickMe('10_19')"></span>
+                        <span id="10_20" ng-click="clickMe('10_20')"></span>
+                        <span id="10_21" ng-click="clickMe('10_21')"></span>
+                        <span id="10_22" ng-click="clickMe('10_22')"></span>
+                        <span id="10_23" ng-click="clickMe('10_23')"></span>
+                        <span class="seat_changed" id="10_24" ng-click="clickMe('10_24')"></span>
+                    </div>
+                    <!-- 第十二列-->
+                    <div id="seat12">
+                        <span class="seat_changed" id="12_1" ng-click="clickMe('12_1')"></span>
+                        <span class="seat_changed" id="12_2" ng-click="clickMe('12_2')"></span>
+                        <span class="seat_changed" id="12_3" ng-click="clickMe('12_3')"></span>
+                        <span class="seat_changed" id="12_4" ng-click="clickMe('12_4')"></span>
+                        <span class="seat_changed" id="12_5" ng-click="clickMe('12_5')"></span>
+                        <span class="seat_changed" id="12_6" ng-click="clickMe('12_6')"></span>
+                        <span class="seat_changed" id="12_7" ng-click="clickMe('12_7')"></span>
+                        <span class="seat_changed" id="12_8" ng-click="clickMe('12_8')"></span>
+                        <span class="seat_changed" id="12_9" ng-click="clickMe('12_9')"></span>
+                        <span class="seat_changed" id="12_10" ng-click="clickMe('12_10')"></span>
+                        <span id="12_11" ng-click="clickMe('12_11')"></span>
+                        <span id="12_12" ng-click="clickMe('12_12')"></span>
+                        <span id="12_13" ng-click="clickMe('12_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="12_14" ng-click="clickMe('12_14')"></span>
+                        <span class="seat_changed" id="12_15" ng-click="clickMe('12_15')"></span>
+                        <span id="12_16" ng-click="clickMe('12_16')"></span>
+                        <span id="12_17" ng-click="clickMe('12_17')"></span>
+                        <span id="12_18" ng-click="clickMe('12_18')"></span>
+                        <span id="12_19" ng-click="clickMe('12_19')"></span>
+                        <span id="12_20" ng-click="clickMe('12_20')"></span>
+                        <span id="12_21" ng-click="clickMe('12_21')"></span>
+                        <span id="12_22" ng-click="clickMe('12_22')"></span>
+                        <span id="12_23" ng-click="clickMe('12_23')"></span>
+                        <span class="seat_changed" id="12_24" ng-click="clickMe('12_24')"></span>
+                    </div>
+                    <!-- 第十四列-->
+                    <div id="seat14">
+                        <span class="seat_changed" id="14_1" ng-click="clickMe('14_1')"></span>
+                        <span class="seat_changed" id="14_2" ng-click="clickMe('14_2')"></span>
+                        <span class="seat_changed" id="14_3" ng-click="clickMe('14_3')"></span>
+                        <span class="seat_changed" id="14_4" ng-click="clickMe('14_4')"></span>
+                        <span class="seat_changed" id="14_5" ng-click="clickMe('14_5')"></span>
+                        <span class="seat_changed" id="14_6" ng-click="clickMe('14_6')"></span>
+                        <span class="seat_changed" id="14_7" ng-click="clickMe('14_7')"></span>
+                        <span class="seat_changed" id="14_8" ng-click="clickMe('14_8')"></span>
+                        <span class="seat_changed" id="14_9" ng-click="clickMe('14_9')"></span>
+                        <span class="seat_changed" id="14_10" ng-click="clickMe('14_10')"></span>
+                        <span id="14_11" ng-click="clickMe('14_11')"></span>
+                        <span id="14_12" ng-click="clickMe('14_12')"></span>
+                        <span id="14_13" ng-click="clickMe('14_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="14_14" ng-click="clickMe('14_14')"></span>
+                        <span class="seat_changed" id="14_15" ng-click="clickMe('14_15')"></span>
+                        <span id="14_16" ng-click="clickMe('14_16')"></span>
+                        <span id="14_17" ng-click="clickMe('14_17')"></span>
+                        <span id="14_18" ng-click="clickMe('14_18')"></span>
+                        <span id="14_19" ng-click="clickMe('14_19')"></span>
+                        <span id="14_20" ng-click="clickMe('14_20')"></span>
+                        <span id="14_21" ng-click="clickMe('14_21')"></span>
+                        <span id="14_22" ng-click="clickMe('14_22')"></span>
+                        <span id="14_23" ng-click="clickMe('14_23')"></span>
+                        <span class="seat_changed" id="14_24" ng-click="clickMe('14_24')"></span>
+                    </div>
+                    <!-- 第十六列-->
+                    <div id="seat16">
+                        <span class="seat_changed" id="16_1" ng-click="clickMe('16_1')"></span>
+                        <span class="seat_changed" id="16_2" ng-click="clickMe('16_2')"></span>
+                        <span class="seat_changed" id="16_3" ng-click="clickMe('16_3')"></span>
+                        <span class="seat_changed" id="16_4" ng-click="clickMe('16_4')"></span>
+                        <span class="seat_changed" id="16_5" ng-click="clickMe('16_5')"></span>
+                        <span class="seat_changed" id="16_6" ng-click="clickMe('16_6')"></span>
+                        <span class="seat_changed" id="16_7" ng-click="clickMe('16_7')"></span>
+                        <span class="seat_changed" id="16_8" ng-click="clickMe('16_8')"></span>
+                        <span class="seat_changed" id="16_9" ng-click="clickMe('16_9')"></span>
+                        <span class="seat_changed" id="16_10" ng-click="clickMe('16_10')"></span>
+                        <span id="16_11" ng-click="clickMe('16_11')"></span>
+                        <span id="16_12" ng-click="clickMe('16_12')"></span>
+                        <span  id="16_13" ng-click="clickMe('16_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="16_14" ng-click="clickMe('16_14')"></span>
+                        <span class="seat_changed" id="16_15" ng-click="clickMe('16_15')"></span>
+                        <span id="16_16" ng-click="clickMe('16_16')"></span>
+                        <span id="16_17" ng-click="clickMe('16_17')"></span>
+                        <span id="16_18" ng-click="clickMe('16_18')"></span>
+                        <span id="16_19" ng-click="clickMe('16_19')"></span>
+                        <span id="16_20" ng-click="clickMe('16_20')"></span>
+                        <span id="16_21" ng-click="clickMe('16_21')"></span>
+                        <span id="16_22" ng-click="clickMe('16_22')"></span>
+                        <span id="16_23" ng-click="clickMe('16_23')"></span>
+                        <span class="seat_changed" id="16_24" ng-click="clickMe('16_24')"></span>
+                    </div>
+                    <!-- 第十八列-->
+                    <div id="seat18">
+                        <span class="seat_changed" id="18_1" ng-click="clickMe('18_1')"></span>
+                        <span class="seat_changed" id="18_2" ng-click="clickMe('18_2')"></span>
+                        <span class="seat_changed" id="18_3" ng-click="clickMe('18_3')"></span>
+                        <span class="seat_changed" id="18_4" ng-click="clickMe('18_4')"></span>
+                        <span class="seat_changed" id="18_5" ng-click="clickMe('18_5')"></span>
+                        <span class="seat_changed" id="18_6" ng-click="clickMe('18_6')"></span>
+                        <span class="seat_changed" id="18_7" ng-click="clickMe('18_7')"></span>
+                        <span class="seat_changed" id="18_8" ng-click="clickMe('18_8')"></span>
+                        <span class="seat_changed" id="18_9" ng-click="clickMe('18_9')"></span>
+                        <span class="seat_changed" id="18_10" ng-click="clickMe('18_10')"></span>
+                        <span id="18_11" ng-click="clickMe('18_11')"></span>
+                        <span id="18_12" ng-click="clickMe('18_12')"></span>
+                        <span id="18_13" ng-click="clickMe('18_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="18_14" ng-click="clickMe('18_14')"></span>
+                        <span class="seat_changed" id="18_15" ng-click="clickMe('18_15')"></span>
+                        <span id="18_16" ng-click="clickMe('18_16')"></span>
+                        <span id="18_17" ng-click="clickMe('18_17')"></span>
+                        <span id="18_18" ng-click="clickMe('18_18')"></span>
+                        <span id="18_19" ng-click="clickMe('18_19')"></span>
+                        <span id="18_20" ng-click="clickMe('18_20')"></span>
+                        <span id="18_21" ng-click="clickMe('18_21')"></span>
+                        <span id="18_22" ng-click="clickMe('18_22')"></span>
+                        <span id="18_23" ng-click="clickMe('18_23')"></span>
+                        <span class="seat_changed" id="18_24" ng-click="clickMe('18_24')"></span>
+                    </div>
+                    <!-- 第二十列-->
+                    <div id="seat20">
+                        <span class="seat_changed" id="20_1" ng-click="clickMe('20_1')"></span>
+                        <span class="seat_changed" id="20_2" ng-click="clickMe('20_2')"></span>
+                        <span class="seat_changed" id="20_3" ng-click="clickMe('20_3')"></span>
+                        <span class="seat_changed" id="20_4" ng-click="clickMe('20_4')"></span>
+                        <span class="seat_changed" id="20_5" ng-click="clickMe('20_5')"></span>
+                        <span class="seat_changed" id="20_6" ng-click="clickMe('20_6')"></span>
+                        <span class="seat_changed" id="20_7" ng-click="clickMe('20_7')"></span>
+                        <span class="seat_changed" id="20_8" ng-click="clickMe('20_8')"></span>
+                        <span class="seat_changed" id="20_9" ng-click="clickMe('20_9')"></span>
+                        <span class="seat_changed" id="20_10" ng-click="clickMe('20_10')"></span>
+                        <span id="20_11" ng-click="clickMe('20_11')"></span>
+                        <span id="20_12" ng-click="clickMe('20_12')"></span>
+                        <span id="20_13" ng-click="clickMe('20_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="20_14" ng-click="clickMe('20_14')"></span>
+                        <span class="seat_changed" id="20_15" ng-click="clickMe('20_15')"></span>
+                        <span id="20_16" ng-click="clickMe('20_16')"></span>
+                        <span id="20_17" ng-click="clickMe('20_17')"></span>
+                        <span id="20_18" ng-click="clickMe('20_18')"></span>
+                        <span id="20_19" ng-click="clickMe('20_19')"></span>
+                        <span id="20_20" ng-click="clickMe('20_20')"></span>
+                        <span id="20_21" ng-click="clickMe('20_21')"></span>
+                        <span id="20_22" ng-click="clickMe('20_22')"></span>
+                        <span id="20_23" ng-click="clickMe('20_23')"></span>
+                    </div>
+                    <!-- 第二十二列-->
+                    <div id="seat22">
+                        <span class="seat_changed" id="22_1" ng-click="clickMe('22_1')"></span>
+                        <span class="seat_changed" id="22_2" ng-click="clickMe('22_2')"></span>
+                        <span class="seat_changed" id="22_3" ng-click="clickMe('22_3')"></span>
+                        <span class="seat_changed" id="22_4" ng-click="clickMe('22_4')"></span>
+                        <span class="seat_changed" id="22_5" ng-click="clickMe('22_5')"></span>
+                        <span class="seat_changed" id="22_6" ng-click="clickMe('22_6')"></span>
+                        <span class="seat_changed" id="22_7" ng-click="clickMe('22_7')"></span>
+                        <span class="seat_changed" id="22_8" ng-click="clickMe('22_8')"></span>
+                        <span class="seat_changed" id="22_9" ng-click="clickMe('22_9')"></span>
+                        <span class="seat_changed" id="22_10" ng-click="clickMe('22_10')"></span>
+                        <span id="22_11" ng-click="clickMe('22_11')"></span>
+                        <span id="22_12" ng-click="clickMe('22_12')"></span>
+                        <span id="22_13" ng-click="clickMe('22_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="22_14" ng-click="clickMe('22_14')"></span>
+                        <span class="seat_changed" id="22_15" ng-click="clickMe('22_15')"></span>
+                        <span id="22_16" ng-click="clickMe('22_16')"></span>
+                        <span id="22_17" ng-click="clickMe('22_17')"></span>
+                        <span id="22_18" ng-click="clickMe('22_18')"></span>
+                        <span id="22_19" ng-click="clickMe('22_19')"></span>
+                        <span id="22_20" ng-click="clickMe('22_20')"></span>
+                        <span id="22_21" ng-click="clickMe('22_21')"></span>
+                        <span id="22_22" ng-click="clickMe('22_22')"></span>
+                        <span id="22_23" ng-click="clickMe('22_23')"></span>
+                    </div>
+                    <!-- 第二十四列-->
+                    <div id="seat24">
+                        <span class="seat_changed" id="24_1" ng-click="clickMe('24_1')"></span>
+                        <span class="seat_changed" id="24_2" ng-click="clickMe('24_2')"></span>
+                        <span class="seat_changed" id="24_3" ng-click="clickMe('24_3')"></span>
+                        <span class="seat_changed" id="24_4" ng-click="clickMe('24_4')"></span>
+                        <span class="seat_changed" id="24_5" ng-click="clickMe('24_5')"></span>
+                        <span class="seat_changed" id="24_6" ng-click="clickMe('24_6')"></span>
+                        <span class="seat_changed" id="24_7" ng-click="clickMe('24_7')"></span>
+                        <span class="seat_changed" id="24_8" ng-click="clickMe('24_8')"></span>
+                        <span class="seat_changed" id="24_9" ng-click="clickMe('24_9')"></span>
+                        <span class="seat_changed" id="24_10" ng-click="clickMe('24_10')"></span>
+                        <span id="24_11" ng-click="clickMe('24_11')"></span>
+                        <span id="24_12" ng-click="clickMe('24_12')"></span>
+                        <span id="24_13" ng-click="clickMe('24_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="24_14" ng-click="clickMe('24_14')"></span>
+                        <span class="seat_changed" id="24_15" ng-click="clickMe('24_15')"></span>
+                        <span id="24_16" ng-click="clickMe('24_16')"></span>
+                        <span id="24_17" ng-click="clickMe('24_17')"></span>
+                        <span id="24_18" ng-click="clickMe('24_18')"></span>
+                        <span id="24_19" ng-click="clickMe('24_19')"></span>
+                        <span id="24_20" ng-click="clickMe('24_20')"></span>
+                        <span id="24_21" ng-click="clickMe('24_21')"></span>
+                        <span id="24_22" ng-click="clickMe('24_22')"></span>
+                    </div>
+                    <!-- 第二十六列-->
+                    <div id="seat26">
+                        <span class="seat_changed" id="26_1" ng-click="clickMe('26_1')"></span>
+                        <span class="seat_changed" id="26_2" ng-click="clickMe('26_2')"></span>
+                        <span class="seat_changed" id="26_3" ng-click="clickMe('26_3')"></span>
+                        <span class="seat_changed" id="26_4" ng-click="clickMe('26_4')"></span>
+                        <span class="seat_changed" id="26_5" ng-click="clickMe('26_5')"></span>
+                        <span class="seat_changed" id="26_6" ng-click="clickMe('26_6')"></span>
+                        <span class="seat_changed" id="26_7" ng-click="clickMe('26_7')"></span>
+                        <span class="seat_changed" id="26_8" ng-click="clickMe('26_8')"></span>
+                        <span class="seat_changed" id="26_9" ng-click="clickMe('26_9')"></span>
+                        <span class="seat_changed" id="26_10" ng-click="clickMe('26_10')"></span>
+                        <span id="26_11" ng-click="clickMe('26_11')"></span>
+                        <span id="26_12" ng-click="clickMe('26_12')"></span>
+                        <span id="26_13" ng-click="clickMe('26_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="26_14" ng-click="clickMe('26_14')"></span>
+                        <span class="seat_changed" id="26_15" ng-click="clickMe('26_15')"></span>
+                        <span id="26_16" ng-click="clickMe('26_16')"></span>
+                        <span id="26_17" ng-click="clickMe('26_17')"></span>
+                        <span id="26_18" ng-click="clickMe('26_18')"></span>
+                        <span id="26_19" ng-click="clickMe('26_19')"></span>
+                        <span id="26_20" ng-click="clickMe('26_20')"></span>
+                        <span id="26_21" ng-click="clickMe('26_21')"></span>
+                        <span id="26_22" ng-click="clickMe('26_22')"></span>
+                    </div>
+                    <!-- 第二十八列-->
+                    <div id="seat28">
+                        <span class="seat_changed" id="28_1" ng-click="clickMe('28_1')"></span>
+                        <span class="seat_changed" id="28_2" ng-click="clickMe('28_2')"></span>
+                        <span class="seat_changed" id="28_3" ng-click="clickMe('28_3')"></span>
+                        <span class="seat_changed" id="28_4" ng-click="clickMe('28_4')"></span>
+                        <span class="seat_changed" id="28_5" ng-click="clickMe('28_5')"></span>
+                        <span class="seat_changed" id="28_6" ng-click="clickMe('28_6')"></span>
+                        <span class="seat_changed" id="28_7" ng-click="clickMe('28_7')"></span>
+                        <span class="seat_changed" id="28_8" ng-click="clickMe('28_8')"></span>
+                        <span class="seat_changed" id="28_9" ng-click="clickMe('28_9')"></span>
+                        <span class="seat_changed" id="28_10" ng-click="clickMe('28_10')"></span>
+                        <span id="28_11" ng-click="clickMe('28_11')"></span>
+                        <span id="28_12" ng-click="clickMe('28_12')"></span>
+                        <span id="28_13" ng-click="clickMe('28_13')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="28_14" ng-click="clickMe('28_14')"></span>
+                        <span class="seat_changed" id="28_15" ng-click="clickMe('28_15')"></span>
+                        <span id="28_16" ng-click="clickMe('28_16')"></span>
+                        <span id="28_17" ng-click="clickMe('28_17')"></span>
+                        <span id="28_18" ng-click="clickMe('28_18')"></span>
+                        <span id="28_19" ng-click="clickMe('28_19')"></span>
+                        <span id="28_20" ng-click="clickMe('28_20')"></span>
+                        <span id="28_21" ng-click="clickMe('28_21')"></span>
+                        <span id="28_22" ng-click="clickMe('28_22')"></span>
+                    </div>
+                    <!-- 第三十列-->
+                    <div id="seat30">
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="30_1" ng-click="clickMe('30_1')"></span>
+                        <span class="seat_changed" id="30_2" ng-click="clickMe('30_2')"></span>
+                        <span class="seat_changed" id="30_3" ng-click="clickMe('30_3')"></span>
+                        <span class="seat_changed"  id="30_4" ng-click="clickMe('30_4')"></span>
+                        <span class="seat_changed"  id="30_5" ng-click="clickMe('30_5')"></span>
+                        <span class="seat_changed" id="30_6" ng-click="clickMe('30_6')"></span>
+                        <span class="seat_changed" id="30_7" ng-click="clickMe('30_7')"></span>
+                        <span class="seat_changed" id="30_8" ng-click="clickMe('30_8')"></span>
+                        <span id="30_9" ng-click="clickMe('30_9')"></span>
+                        <span id="30_10" ng-click="clickMe('30_10')"></span>
+                        <span id="30_11" ng-click="clickMe('30_11')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="30_12" ng-click="clickMe('30_12')"></span>
+                        <span class="seat_changed" id="30_13" ng-click="clickMe('30_13')"></span>
+                        <span id="30_14" ng-click="clickMe('30_14')"></span>
+                        <span id="30_15" ng-click="clickMe('30_15')"></span>
+                        <span id="30_16" ng-click="clickMe('30_16')"></span>
+                        <span id="30_17" ng-click="clickMe('30_17')"></span>
+                        <span id="30_18" ng-click="clickMe('30_18')"></span>
+                        <span id="30_19" ng-click="clickMe('30_19')"></span>
+                    </div>
+                    <!-- 第三十二列-->
+                    <div id="seat32">
+                        <span class="empty"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="32_1" ng-click="clickMe('32_1')" ></span>
+                        <span class="seat_changed" id="32_2" ng-click="clickMe('32_2')"></span>
+                        <span class="seat_changed" id="32_3" ng-click="clickMe('32_3')"></span>
+                        <span class="seat_changed" id="32_4" ng-click="clickMe('32_4')"></span>
+                        <span class="seat_changed" id="32_5" ng-click="clickMe('32_5')"></span>
+                        <span class="seat_changed" id="32_6" ng-click="clickMe('32_6')"></span>
+                        <span class="seat_changed" id="32_7" ng-click="clickMe('32_7')"></span>
+                        <span class="seat_changed" id="32_8" ng-click="clickMe('32_8')"></span>
+                        <span id="32_9" ng-click="clickMe('32_9')"></span>
+                        <span id="32_10" ng-click="clickMe('32_10')"></span>
+                        <span id="32_11" ng-click="clickMe('32_11')"></span>
+                        <span class="empty"></span>
+                        <span class="seat_changed" id="32_12" ng-click="clickMe('32_12')"></span>
+                        <span class="seat_changed" id="32_13" ng-click="clickMe('32_13')"></span>
+                        <span id="32_14" ng-click="clickMe('32_14')"></span>
+                        <span id="32_15" ng-click="clickMe('32_15')"></span>
+                        <span id="32_16" ng-click="clickMe('32_16')"></span>
+                        <span id="32_17" ng-click="clickMe('32_17')"></span>
+                        <span id="32_18" ng-click="clickMe('32_18')"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--<h2 style="color: red;margin: 0;">注意：总共24行，32列</h2>-->
+    <h3 style="color: red;margin: 0;text-align: center;">座位:{{row}}排{{cell}}座</h3>
+    <!-- 上下按钮及信息-->
+    <div style="overflow: hidden;">
+        <div style="float: left;width: 45%;">
+
+            <!--<h3 style="color: red;margin: 0;text-align: center;">可选状态:</h3>-->
+            <div style="margin: 10px 10px">
+                <span style="display:inline-block;vertical-align: middle;width:20px;height: 20px;background: #01aa4f;"></span><span style="display: inline-block;margin-left: 20px;">可选区域</span>
+            </div>
+            <div style="margin: 10px 10px">
+                <span style="display:inline-block;vertical-align: middle;width:20px;height: 20px;background: #fe8417;"></span> <span style="display: inline-block;margin-left: 20px;">不可选区域</span>
+            </div>
+            <div style="margin: 10px 10px">
+                <span style="display:inline-block;vertical-align: middle;width:20px;height: 20px;background: yellow;"></span> <span style="display: inline-block;margin-left: 20px;">待选</span>
+            </div>
+        </div>
+
+        <div style="width:55%;margin: 0 auto;margin-top:10px;float: right;">
+            <div ng-click="clickUp()" style="width: 33%;height: 46px;margin: 0 auto">
+                <img src="img/seat_up.png" class="img_responsive" alt=""/>
+            </div>
+            <div style="height: 46px;width: 100%;overflow: hidden;">
+                <div ng-click="clickLeft()" style="float:left;width: 33.3%;height: 90px;margin: 0 auto">
+                    <img src="img/seat_left.png" class="img_responsive" alt=""/>
+                </div>
+                <div ng-click="clickDown()" style="float:left;width: 33.3%;height: 90px;margin: 0 auto">
+                    <img src="img/seat_down.png" class="img_responsive" alt=""/>
+                </div>
+                <div ng-click="clickRight()" style="float:left;width: 33.3%;height: 90px;margin: 0 auto">
+                    <img src="img/seat_right.png" class="img_responsive" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button style="margin:0;margin-top: 10px;font-size: 2rem;background: #a40000;border-radius: 30px;height: 48px;" class="checkout-button button button-block button-calm" ng-click="clickYes()"  >确认选座</button>
+
+
+    <div style="clear:both"></div>
+
+</ion-content>

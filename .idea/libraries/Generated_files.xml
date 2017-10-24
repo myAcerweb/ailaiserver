@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/ailai.min.min.js" />
+        <item url="file://$PROJECT_DIR$/js/ailai.min.js" />
+        <item url="file://$PROJECT_DIR$/js/ailai.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/ailai.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/ailai.min.min.js" />
+      <root url="file://$PROJECT_DIR$/js/ailai.min.js" />
+      <root url="file://$PROJECT_DIR$/js/ailai.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
